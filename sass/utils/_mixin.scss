@@ -1,0 +1,36 @@
+@mixin button {
+  font-family: 'Helvetica Neue Roman';
+  font-size: 14px;
+  width: 160px;
+  height: 32px;
+  border: 1px solid #464646;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: transparent;
+
+  &:hover {
+    background: #000;
+    color: #fff;
+    transition: .2s;
+  }
+}
+
+@mixin input {
+  color: $base-color;
+  font-family: 'Helvetica Neue Light';
+  font-size: 14px;
+  width: 249px;
+  height: 25px;
+  border: none;
+  border-bottom: 1px solid $base-color;
+  outline: none;
+  
+}
+
+@mixin placeholder {
+  color: $base-color;
+  font-family: 'Helvetica Neue Light';
+  font-size: 14px;
+}
