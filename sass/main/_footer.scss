@@ -1,0 +1,37 @@
+footer {
+  color: $base-color;
+}
+.data {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 85px;
+  padding-bottom: 20px;
+
+  &-item {
+    text-align: center;
+    font-family: 'Helvetica Neue Light';
+    font-size: 18px;
+
+    img {
+      margin-bottom: 15px;
+    }
+
+    a {
+      text-decoration: none;
+      font-family: 'Helvetica Neue Light';
+      font-size: 18px;
+      color: $base-color;
+    }
+  }
+}
+
+.politic {
+  font-family: 'Helvetica Neue Light';
+      font-size: 14px;
+      height: 55px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top: 1px solid $base-color;
+      
+}
