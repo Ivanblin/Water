@@ -1,11 +1,13 @@
 .about {
   text-align: center;
   margin-top: -35px;
+
   &-title {
     font-family: 'Helvetica Neue Bold';
     font-size: 27px;
     margin-bottom: 31px;
   }
+
   &-descr {
     font-family: 'Helvetica Neue Light';
     font-size: 18px;
@@ -13,21 +15,25 @@
     width: 75%;
     margin: 0 auto;
   }
+
   &-product {
     display: flex;
     justify-content: space-between;
     margin-top: 95px;
+
     .item {
       width: 320px;
       height: 460px;
       position: relative;
       cursor: pointer;
+
       &:hover {
         .item-descr {
           display: block;
           transition: .5s;
         }
       }
+
       img {
         width: 100%;
         height: 100%;
@@ -36,6 +42,7 @@
         top: 0;
         z-index: -1;
       }
+
       &-descr {
         position: absolute;
         bottom: 0;
@@ -43,21 +50,68 @@
         background: #fff;
         text-align: left;
         display: none;
+
         &__title {
           font-family: 'Helvetica Neue Bold';
           font-size: 18px;
           margin-top: 25px;
         }
+
         &__desc {
           font-family: 'Helvetica Neue Light';
           font-size: 14px;
           margin-top: 15px;
         }
+
         button {
           @include button;
           width: 100%;
           position: absolute;
           bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 798px) {
+  .about {
+    &-product {
+      display: block;
+
+      .item {
+        margin: 0 auto 20px auto;
+
+        &-descr {
+          display: block;
+          border: 1px solid $base-color;
+          border-top: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .about {
+    margin-top: 0;
+
+    &-descr {
+      width: 85%;
+    }
+
+    &-product {
+      .item {
+        width: 100%;
+        margin-bottom: 50px;
+
+        &-descr {
+          border: none;
+          padding: 0 16px;
+
+          button {
+            width: 90%;
+          }
         }
       }
     }

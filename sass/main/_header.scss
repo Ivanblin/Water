@@ -1,10 +1,15 @@
 header {
   height: 100vh;
   position: relative;
+
   .banner {
     position: absolute;
     width: 100%;
     height: 100%;
+  }
+
+  .bannerMob {
+    display: none;
   }
 }
 
@@ -18,6 +23,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 15px;
 
     &__nav {
       display: flex;
@@ -36,6 +42,10 @@ header {
       button {
         @include button;
         margin-left: 10px;
+      }
+
+      .feedbackForm {
+        display: none;
       }
     }
   }
@@ -83,7 +93,7 @@ header {
       left: -1%;
     }
 
-    &__descr  {
+    &__descr {
       font-family: 'Helvetica Neue Light';
       width: 48%;
       position: absolute;
@@ -102,7 +112,7 @@ nav ul {
     list-style: none;
     margin-right: 20px;
     cursor: pointer;
-    
+
     a {
       position: relative;
       color: $base-color;
@@ -122,6 +132,111 @@ nav ul {
       &:hover:before {
         transform: scale(1);
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .header {
+    &-top {
+      ul li {
+        margin-right: 10px;
+
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+
+    &-el {
+      right: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 798px) {
+  .header {
+    &-top {
+      position: relative;
+      text-align: right;
+
+      &__nav {
+        position: absolute;
+        width: 100%;
+        display: none;
+
+        img {
+          display: none;
+        }
+      }
+
+      &__feedback {
+        display: block;
+        margin-left: auto;
+        padding-right: 15px;
+
+        a {
+          display: block;
+        }
+
+        button {
+          display: none;
+        }
+
+        .feedbackForm {
+          display: block;
+        }
+      }
+    }
+
+    &-el {
+      left: 0;
+    }
+  }
+
+  nav ul {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .header {
+    &-el {
+      &__name {
+        font-size: 77px;
+        top: 5%;
+        left: 50%;
+      }
+
+      &__block {
+        border: none;
+        width: 100%;
+
+        &::before {
+          display: none;
+        }
+
+        &::after {
+          display: none;
+        }
+      }
+
+      &__descr {
+        display: none;
+      }
+    }
+  }
+
+  header {
+    .banner {
+      display: none;
+    }
+
+    .bannerMob {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
     }
   }
 }
