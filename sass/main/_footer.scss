@@ -1,6 +1,7 @@
 footer {
   color: $base-color;
 }
+
 .data {
   display: flex;
   justify-content: space-between;
@@ -23,15 +24,53 @@ footer {
       color: $base-color;
     }
   }
+  .logo {
+    display: none;
+  }
 }
 
 .politic {
   font-family: 'Helvetica Neue Light';
-      font-size: 14px;
-      height: 55px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-top: 1px solid $base-color;
-      
+  font-size: 14px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid $base-color;
+}
+
+@media screen and (max-width: 1080px) {
+  .data {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 798px) {
+  .data {
+    display: block;
+
+    &-item {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .data {
+    border-top: 1px solid $base-color;
+    padding-top: 25px;
+    &-item {
+      img {
+        display: none;
+      }
+    }
+    .logo {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .politic  {
+    border-top: none;
+    text-align: center;
+  }
 }

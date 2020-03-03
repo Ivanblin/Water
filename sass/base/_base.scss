@@ -2,6 +2,35 @@
   width: 1060px;
   margin: 0 auto;
 }
+
 a {
   text-decoration: none;
+}
+
+button {
+  outline: none;
+}
+
+@media screen and (max-width: 1080px) {
+  .container {
+    width: 798px;
+  }
+
+  button {
+    &:hover {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 798px) {
+  .container {
+    width: 576px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    width: 100%
+  }
 }
