@@ -12,7 +12,7 @@
     font-family: 'Helvetica Neue Light';
     font-size: 18px;
     line-height: 1.3;
-    width: 75%;
+    width: 90%;
     margin: 0 auto;
   }
 
@@ -25,7 +25,6 @@
       width: 320px;
       height: 460px;
       position: relative;
-      cursor: pointer;
 
       &:hover {
         .item-descr {
@@ -46,7 +45,7 @@
       &-descr {
         position: absolute;
         bottom: 0;
-        height: 164px;
+        height: 210px;
         background: #fff;
         text-align: left;
         display: none;

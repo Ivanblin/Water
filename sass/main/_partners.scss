@@ -6,10 +6,16 @@
 
   &-item {
     margin-right: 70px;
+    width: 135px;
+    height: 100px;
+
+    img {
+      width: 100%;
+    }
   }
 }
 
-@media screen and (max-width: 575px)  {
+@media screen and (max-width: 575px) {
   .partners {
     &-item {
       margin-right: 30px;

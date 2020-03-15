@@ -16,8 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
    */
   function sendData() {
     let formInputs = Array.from(
-      document.querySelectorAll('.form.container input')
-    ), data = [];
+        document.querySelectorAll('.form.container input')
+      ),
+      data = [];
 
     formInputs.forEach(function (input) {
       if (input.getAttribute('type') !== 'checkbox') {
@@ -40,14 +41,34 @@ document.addEventListener('DOMContentLoaded', function () {
     // создать объект для формы
     var formData = new FormData();
 
-    for (var i in data) if (data.hasOwnProperty(i)) {
-      // добавить к пересылке ещё пару ключ - значение
-      formData.append(i.toString(), data[i].toString());
-    }
+    for (var i in data)
+      if (data.hasOwnProperty(i)) {
+        // добавить к пересылке ещё пару ключ - значение
+        formData.append(i.toString(), data[i].toString());
+      }
 
     // отослать
     var xhr = new XMLHttpRequest();
     xhr.open("POST", url);
     xhr.send(formData);
+  }
+});
+
+var modal = document.querySelector('.modal');
+var btn = document.querySelectorAll('.myBtn');
+var close = document.querySelector('#close');
+for (let i = 0; i < btn.length; i++) {
+  btn[i].addEventListener('click', () => {
+    modal.style.display = "flex";
+  });
+}
+
+close.addEventListener('click', () => {
+  modal.style.display = "none";
+});
+
+window.addEventListener('click', () => {
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
 });
