@@ -20,7 +20,7 @@
 @mixin input {
   color: $base-color;
   font-family: 'Helvetica Neue Light';
-  font-size: 14px;
+  font-size: 15px;
   width: 249px;
   height: 25px;
   border: none;
@@ -32,6 +32,6 @@
 @mixin placeholder {
   color: $base-color;
   font-family: 'Helvetica Neue Light';
-  font-size: 14px;
+  font-size: 15px;
   padding-top: 1px;
 }
