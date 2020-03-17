@@ -130,6 +130,7 @@
     width: 1px;
     height: 1px;
     position: absolute;
+    width: 0 !important;
 
     &:checked {
       &~.point {
