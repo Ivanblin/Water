@@ -5,22 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="/imges/logo.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css?ver=1">
+  <link rel="stylesheet" href="css/style.min.css?ver=2">
   <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <title>Document</title>
 </head>
 
 <body>
   <header>
-    <img class="banner" src="imges/banner.png" alt="banner">
-    <img class="bannerMob" src="imges/bannerMob.png" alt="banner">
     <div class="header container">
+      <img class="bottle wow bounceInUp" data-wow-duration="2s" src="imges/bottle.png" alt="banner">
       <div class="header-top">
-        <a class="burger">
+        <!-- <a class="burger">
           <span></span>
-        </a>
+        </a> -->
         <div class="header-top__nav">
           <img src="imges/logo.png" alt="logo">
           <nav>
@@ -36,13 +37,13 @@
         <div class="header-top__feedback">
           <a href="tel:89057189002">+7 (905) 718-90-02</a>
           <p class="feedbackForm">Заказать обратный звонок</p>
-          <button class="myBtn">Обратный звонок</button>
+          <button class="myBtn wow fadeInRight">Обратный звонок</button>
         </div>
       </div>
-      <div class="header-el">
+      <div class="header-el wow rotateInDownRight">
         <div class="header-el__block">
           <h1 class="header-el__name">El EM ENT</h1>
-          <div class="header-el__descr">Высококачественная бутилировання вода для кофейных и чайных напитков</div>
+          <div class="header-el__descr">Высококачественная бутилированная вода для кофейных, чайных напитков и ежедневного употребления.</div>
         </div>
       </div>
     </div>
@@ -50,11 +51,11 @@
 
   <section class="about container">
     <div class="about-title">О НАС</div>
-    <div class="about-descr">Привет! Мы команда компании Element хотим сделать кое-что классное и новое на рынке подготовки и доставки питьевой воды. Поднять на очень высокий уровень качество, подход к производству воды и сервис.  Наше предприятие началось с кофейни. Так, мы очень много работали над нашими напитками и всегда стремились довести их до идеала. Дойдя до подготовки воды и, поняв, какая именно нужна вода для кофе и кофейного оборудования мы решили эту проблему, сконструировав фильтрационную систему обратного осмоса со специальным подмесом и настройкой минерализации.  Но, когда к нам начали обращаться люди из кофеен, в которых нет водопровода, мы не могли посоветовать ничего толкового, так как на рынке до недавнего времени не было воды которая соответствовала бы нашим требованиям. И мы решили ее сделать<br><br>
+    <div class="about-descr wow pulse" data-wow-duration="3s" data-wow-iteration="3" >Привет! Мы команда компании Element хотим сделать кое-что классное и новое на рынке подготовки и доставки питьевой воды. Поднять на очень высокий уровень качество, подход к производству воды и сервис.  Наше предприятие началось с кофейни. Так, мы очень много работали над нашими напитками и всегда стремились довести их до идеала. Дойдя до подготовки воды и, поняв, какая именно нужна вода для кофе и кофейного оборудования мы решили эту проблему, сконструировав фильтрационную систему обратного осмоса со специальным подмесом и настройкой минерализации.  Но, когда к нам начали обращаться люди из кофеен, в которых нет водопровода, мы не могли посоветовать ничего толкового, так как на рынке до недавнего времени не было воды которая соответствовала бы нашим требованиям. И мы решили ее сделать<br><br>
       Мы не планируем останавливаться на подготовке воды для кофе и питья - у нас очень амбициозные планы.  Так, о воде есть очень много мифов и мало реальной информации, мы хотим не только делать и доставлять воду максимального качества, но и рассказывать почему вода именно такая, объяснять смысл каждого элемента и количества, сделать лучший сервис, внедрять последние технологии логистики, привлекать ведущих специалистов и проводить исследования, чтобы рутинный заказ воды превратить в интересное обучающее занятие.
     </div>
     <div class="about-product">
-      <div class="item">
+      <div class="item wow fadeInLeft">
         <img src="imges/about/item1.png" alt="">
         <div class="item-descr">
           <div class="item-descr__title">Element intense</div>
@@ -64,7 +65,7 @@
           <button class="myBtn">Заказать</button>
         </div>
       </div>
-      <div class="item">
+      <div class="item wow fadeInUp">
         <img src="imges/about/item2.png" alt="">
         <div class="item-descr">
           <div class="item-descr__title">Element Pure</div>
@@ -74,7 +75,7 @@
           <button class="myBtn">Заказать</button>
         </div>
       </div>
-      <div class="item">
+      <div class="item wow fadeInRight">
         <img src="imges/about/item3.png" alt="">
         <div class="item-descr">
           <div class="item-descr__title">Element Still</div>
@@ -88,7 +89,7 @@
   </section>
 
   <section class="price">
-    <img class="price-fon" src="imges/slider/mountains.jpg" alt="">
+    <img class="price-fon wow pulse" data-wow-duration="10s" data-wow-iteration="10" src="imges/slider/mountains.jpg" alt="">
     <div class="priceBlock container">
       <div class="priceBlock-left">
         <div class="priceBlock-left__title">Цены и условия</div>
@@ -150,6 +151,8 @@
 
   <section class="partners">
     <div class="partners-item"><img src="/imges/partners/partner1.png" alt="partner1"></div>
+    <div class="partners-item"><img src="/imges/partners/partner2.png" alt="partner2"></div>
+    <div class="partners-item"><img src="/imges/partners/partner3.jpg" alt="partner3"></div>
   </section>
 
   <section class="feedback container">
@@ -287,6 +290,10 @@
   <script src="js/main.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/sender.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 
 </html>
