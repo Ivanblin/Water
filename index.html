@@ -7,11 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" href="/imges/logo.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css?ver=2">
+  <link rel="stylesheet" href="css/style.min.css?ver=5">
   <link rel="stylesheet" href="css/stylesheet.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-  <title>Document</title>
+  <title>Element</title>
 </head>
 
 <body>
@@ -26,11 +26,11 @@
           <img src="imges/logo.png" alt="logo">
           <nav>
             <ul>
-              <li><a href="#">О нас</a></li>
-              <li><a href="#">Виды воды</a></li>
-              <li><a href="#">Цены и условия</a></li>
-              <li><a href="#">Отзывы</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a href="#about">О нас</a></li>
+              <li><a href="#water">Виды воды</a></li>
+              <li><a href="#price">Цены и условия</a></li>
+              <li><a href="#reviews">Отзывы</a></li>
+              <li><a href="#contact">Контакты</a></li>
             </ul>
           </nav>
         </div>
@@ -50,11 +50,12 @@
   </header>
 
   <section class="about container">
-    <div class="about-title">О НАС</div>
+    <div class="about-title"><a name="about"></a>О НАС</div>
     <div class="about-descr wow pulse" data-wow-duration="3s" data-wow-iteration="3" >Привет! Мы команда компании Element хотим сделать кое-что классное и новое на рынке подготовки и доставки питьевой воды. Поднять на очень высокий уровень качество, подход к производству воды и сервис.  Наше предприятие началось с кофейни. Так, мы очень много работали над нашими напитками и всегда стремились довести их до идеала. Дойдя до подготовки воды и, поняв, какая именно нужна вода для кофе и кофейного оборудования мы решили эту проблему, сконструировав фильтрационную систему обратного осмоса со специальным подмесом и настройкой минерализации.  Но, когда к нам начали обращаться люди из кофеен, в которых нет водопровода, мы не могли посоветовать ничего толкового, так как на рынке до недавнего времени не было воды которая соответствовала бы нашим требованиям. И мы решили ее сделать<br><br>
       Мы не планируем останавливаться на подготовке воды для кофе и питья - у нас очень амбициозные планы.  Так, о воде есть очень много мифов и мало реальной информации, мы хотим не только делать и доставлять воду максимального качества, но и рассказывать почему вода именно такая, объяснять смысл каждого элемента и количества, сделать лучший сервис, внедрять последние технологии логистики, привлекать ведущих специалистов и проводить исследования, чтобы рутинный заказ воды превратить в интересное обучающее занятие.
     </div>
     <div class="about-product">
+      <a name="water"></a>
       <div class="item wow fadeInLeft">
         <img src="imges/about/item1.png" alt="">
         <div class="item-descr">
@@ -92,7 +93,7 @@
     <img class="price-fon wow pulse" data-wow-duration="10s" data-wow-iteration="10" src="imges/slider/mountains.jpg" alt="">
     <div class="priceBlock container">
       <div class="priceBlock-left">
-        <div class="priceBlock-left__title">Цены и условия</div>
+        <div class="priceBlock-left__title"><a name="price"></a>Цены и условия</div>
         <div class="priceBlock-left__descr">
           Согласно нашему стандартному предложению цена бутыли составляет 250 р. Минимальный заказ 5 бутылей или 1250 рублей вместе с доставкой.  Вы можете заказать и четыре бутыли или даже одну, но стоимость заказа все равно составит 1250 р.<br><br>
           При первом заказе также необходимо оплатить залог за бутыли по 250 р. за каждую. Залог возвратный.
@@ -156,7 +157,7 @@
   </section>
 
   <section class="feedback container">
-    <div class="feedback-title">ОТЗЫВЫ</div>
+    <div class="feedback-title"><a name="reviews"></a>ОТЗЫВЫ</div>
     <!-- Slider main container -->
     <div class="swiper-container slider-feedback">
       <!-- Additional required wrapper -->
@@ -224,7 +225,7 @@
       </div>
       <div class="form-main">
         <div class="form-main__left">
-          <input name="tel" type="tel" placeholder="Телефон" required>
+          <input name="phone" id="phone" type="tel" placeholder="Телефон" required>
           <input name="adress" type="text" placeholder="Адрес" required>
         </div>
         <div class="form-main__right">
@@ -246,6 +247,7 @@
   <footer>
     <div class="data container">
       <div class="data-item">
+        <a name="contact"></a>
         <img src="imges/data/phone.svg" alt="">
         <div class="data-item__descr"><a href="tel:89057189002">+7 (905) 718-90-02</a></div>
       </div>
@@ -287,9 +289,10 @@
   </div>
 
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="js/sender.js"></script>
   <script src="js/main.js"></script>
   <script src="js/slider.js"></script>
-  <script src="js/sender.js"></script>
   <script src="js/wow.min.js"></script>
   <script>
     new WOW().init();

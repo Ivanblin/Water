@@ -29,12 +29,12 @@ document.addEventListener('DOMContentLoaded', function () {
     ajaxPost('/submit.php', data);
 
     if (selector == '.form.container') {
-      document.querySelector(selector).innerHTML = 'Сообщение успешно отправленоefefefe';
+      document.querySelector(selector).innerHTML = '<div class="feedback-form"><p>Сообщение успешно отправлено</p><p>В ближайшее время мы Вам перезвоним</p></div>';
     } else if (selector == '.modal-block form') {
       document.querySelector(selector).innerHTML = 'Сообщение успешно отправлено';
     }
 
-    
+
   }
 
 
