@@ -73,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   //Recipients
   $mail->setFrom('UserWater@yandex.ru', 'Mailer'); // указать от кого
   //$mail->addAddress('waterelmnt@gmail.com', 'Joe User'); // указать кому (кому заявки будут отправлятся)
-  $mail->addAddress('krivov_94@list.ru', 'Joe User');
+  $mail->addAddress('waterelmnt@gmail.com', 'Joe User');
   // Контент
   $mail->isHTML(true); // Set email format to HTML
   $mail->Subject = 'Новая заявка с сайта';

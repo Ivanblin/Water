@@ -7,7 +7,9 @@
   &-item {
     margin-right: 70px;
     width: 135px;
-    height: 100px;
+    height: 145px;
+    display: flex;
+    align-items: center;
 
     img {
       width: 100%;
