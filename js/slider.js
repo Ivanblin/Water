@@ -1,12 +1,7 @@
-// var mySwiper = new Swiper('.slider', {
-//   speed: 400,
-//   spaceBetween: 100
-// });
-
-var sliderProduct = new Swiper('.slider-product', {
+var swiper = new Swiper(".slider-product", {
   navigation: {
-    nextEl: '.button-next',
-    prevEl: '.button-prev',
+    nextEl: ".button-next",
+    prevEl: ".button-prev",
   },
 });
 
